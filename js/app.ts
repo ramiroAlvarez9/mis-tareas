@@ -97,7 +97,8 @@ const mostrarTareas = ():void => {
 const cantidadDeTareas = ():void => {    
 
     const numeroDeTareas:HTMLElement|null = document.querySelector('.main__header--container--number--h4');
-    let cantidadTareasLocalStorage:number = JSON.parse(localStorage.getItem('tasks')).length;
+    
+    let cantidadTareasLocalStorage:number|null = JSON.parse(localStorage.getItem('tasks')).length;
     numeroDeTareas.textContent = cantidadTareasLocalStorage;
             
 }
@@ -117,7 +118,7 @@ const eliminarTarea = (tarea):string => {
 
     
 }
-
+window.localStorage;
 mostrarTareas();
 cantidadDeTareas(); 
 fecha_hora();

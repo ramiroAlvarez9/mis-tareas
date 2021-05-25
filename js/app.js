@@ -72,6 +72,7 @@ var eliminarTarea = function (tarea) {
     }
     localStorage.setItem('tasks', JSON.stringify(tareasLocalStorage));
 };
+window.localStorage;
 mostrarTareas();
 cantidadDeTareas();
 fecha_hora();
