@@ -95,12 +95,16 @@ const mostrarTareas = ():void => {
     }
 }
 const cantidadDeTareas = ():void => {    
-
-    const numeroDeTareas:HTMLElement|null = document.querySelector('.main__header--container--number--h4');
     
-    let cantidadTareasLocalStorage:number|null = JSON.parse(localStorage.getItem('tasks')).length;
-    numeroDeTareas.textContent = cantidadTareasLocalStorage;
-            
+    if(JSON.parse(localStorage.getItem('tasks')) != null){
+        
+        const numeroDeTareas:HTMLElement|null = document.querySelector('.main__header--container--number--h4');
+        
+        let cantidadTareasLocalStorage:number|null = JSON.parse(localStorage.getItem('tasks')).length;
+        
+        numeroDeTareas.textContent = cantidadTareasLocalStorage;
+    
+    }
 }
 
 const eliminarTarea = (tarea):string => {

@@ -59,9 +59,11 @@ var mostrarTareas = function () {
     }
 };
 var cantidadDeTareas = function () {
-    var numeroDeTareas = document.querySelector('.main__header--container--number--h4');
-    var cantidadTareasLocalStorage = JSON.parse(localStorage.getItem('tasks')).length;
-    numeroDeTareas.textContent = cantidadTareasLocalStorage;
+    if (JSON.parse(localStorage.getItem('tasks')) != null) {
+        var numeroDeTareas = document.querySelector('.main__header--container--number--h4');
+        var cantidadTareasLocalStorage = JSON.parse(localStorage.getItem('tasks')).length;
+        numeroDeTareas.textContent = cantidadTareasLocalStorage;
+    }
 };
 var eliminarTarea = function (tarea) {
     var tareasLocalStorage = JSON.parse(localStorage.getItem('tasks'));
