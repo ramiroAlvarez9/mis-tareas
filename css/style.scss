@@ -3,7 +3,6 @@ $color1-opuesto: #f37e00;
 $color2: #A8BDD8;
 $color3: #111D42;
 $color4: #2bbcec; 
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -14,14 +13,11 @@ body {
     height: 30vh;
     width: 100vw;
     background-color: $color1;  
-    border-radius: 10px;
-    
-    
+    border-radius: 10px;      
     .main__header--container{
         width:70%;
         height:100%;
     }
-
     .main__header--container--items{
         height:100%;
         display:flex;
@@ -52,20 +48,13 @@ body {
         height:100%;
         display:inherit;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;   
         .main__header--container--number--h4{
 
             font-size:10vh;
-
         }
-    
     }
-
-
-
 }
-
 .tareas{
     background-color: white;
     height: 70vh;
@@ -87,9 +76,7 @@ body {
     .tareas__container--items{
         font-family: 'Roboto', sans-serif;
         border-bottom: solid 0.5px rgba(128, 128, 128, 0.589);            
-        margin-top: 5%;
-        
-        
+        margin-top: 5%;   
     }
     .tareas__container--title{
         color: $color1-opuesto;
@@ -112,8 +99,7 @@ body {
 
 
         }
-    }
-        
+    }       
 #agregar-tarea{
     position:absolute;
     z-index: 2;
@@ -122,8 +108,6 @@ body {
     width:100vw;  
     transition: transform 0.7s;
     transform: translateX(-100%);
-
-    
     .agregar-tarea__container--nav{
         height:8%;
         width:90%;
@@ -189,9 +173,6 @@ body {
                 color: green;
 
             }
-         
-         
-         
         }
         .form__prioridad{
 
@@ -209,10 +190,5 @@ body {
             color: white;            
             border-style: none;
         }
-    
     }
-    
 }
-
-
-
