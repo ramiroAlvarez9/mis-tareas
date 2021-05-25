@@ -1,0 +1,218 @@
+$color1: #4957A2;
+$color1-opuesto: #f37e00;
+$color2: #A8BDD8;
+$color3: #111D42;
+$color4: #2bbcec; 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.main__header{
+    display:flex;
+    flex-direction: row;
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    background-color: $color1;  
+    border-radius: 10px;
+    
+    
+    .main__header--container{
+        width:70%;
+        height:100%;
+    }
+
+    .main__header--container--items{
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin-left:10px;
+    }
+    .main__header--container--items--menu{
+        margin-top:2%;
+    }
+    .iconify-container-menu{
+        margin-top:1%;
+        height:31px;
+        width:32px;
+
+    }
+    .main__header--container--items--h1{
+        font-size: 5vh;
+    }
+    .main__header--container--items--h4{
+        margin-bottom:2%;
+        font-size:10px;
+        color: gray;
+    }
+    .main__header--container--number{
+        border-left: solid 0.5px rgba(255, 255, 255, 0.644);
+        width:30%;
+        height:100%;
+        display:inherit;
+        justify-content: center;
+        align-items: center;
+        
+        .main__header--container--number--h4{
+
+            font-size:10vh;
+
+        }
+    
+    }
+
+
+
+}
+
+.tareas{
+    background-color: white;
+    height: 70vh;
+
+    .tareas__h4{
+        margin-top:20px;
+        margin-left:10px;
+        font-size:20px;
+        color:gray;
+
+    }
+    .tareas__container{
+        margin-top:10px;
+        height:80%;
+        width:100%;
+        margin-left:10px;
+    }
+    }
+    .tareas__container--items{
+        font-family: 'Roboto', sans-serif;
+        border-bottom: solid 0.5px rgba(128, 128, 128, 0.589);            
+        margin-top: 5%;
+        
+        
+    }
+    .tareas__container--title{
+        color: $color1-opuesto;
+        font-size:20px;
+        margin-bottom:1%;
+        width: 60%;
+    
+    }.tareas__container--prioridad{
+        font-size: 12px;
+        letter-spacing:1px;
+        font-weight: bold;
+        color:$color1;
+
+    }
+    .tareas__container--delete{
+     
+        margin-top:15px;
+        .tareas__container--delete--button{
+            display:block;
+
+
+        }
+    }
+        
+#agregar-tarea{
+    position:absolute;
+    z-index: 2;
+    background-color: $color1;
+    height:100vh;
+    width:100vw;  
+    transition: transform 0.7s;
+    transform: translateX(-100%);
+
+    
+    .agregar-tarea__container--nav{
+        height:8%;
+        width:90%;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        margin-left: 5%;
+   
+        .iconify-container-arrow{
+            margin-top:1%;
+            height:31px;
+            width:32px;
+        }
+        
+    }                        
+    .agregar-tarea__container--logo{
+
+        height: 32%;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center
+    }
+    .form{
+        width: 90%;
+        height: 70%;
+        display:flex;
+        margin-left:5%;
+        margin-top: 10%;
+        flex-direction: column;
+
+        input[type="text"]{
+            background-color: $color1;
+            outline:none;
+            border-style:none;
+            border-bottom: solid 1px white;
+            height: 10%;
+            color: white;
+            font-size: 25px;
+        }
+        input[type="text"]::placeholder{
+            color:rgba(204, 204, 204, 0.452);
+                                             
+        }
+        .select{
+            border-style: none;
+            background-color: $color1;
+            font-size:25px;
+            color:rgba(204, 204, 204, 0.452);
+            margin-top: 5%;
+            margin-bottom:5%;
+            outline:none;
+            
+            .select__alta{
+                color: red;
+            }
+            .select__media{
+                color: orange;
+
+            }
+            .select__baja{
+
+                color: green;
+
+            }
+         
+         
+         
+        }
+        .form__prioridad{
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:20%;
+        
+        }      
+        input[type = "submit"]{
+
+            width:100%;
+            height:15%;
+            background-color: $color4;
+            color: white;            
+            border-style: none;
+        }
+    
+    }
+    
+}
+
+
+
