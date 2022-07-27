@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link  href="./css/reset.min.css" rel="stylesheet">
+    <link href="./css/reset.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-    <link rel = "icon" href = "./assets/TA.ico">
+    <link rel="icon" href="./assets/TA.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Todo app</title>
 </head>
+
 <body>
 
-<main class = 'main'>
-    
-    <header class = "main__header">
-        <div id = "agregar-tarea">
-            <div class = "agregar-tarea__container--nav">
-                <span class = "iconify-container-arrow">
-                    <span class="iconify agregar-tarea__container--nav--arrow" data-icon="akar-icons:arrow-left" data-inline="false" style="color: #ffffff;" data-width="30" data-height="30"></span>
-                </span>
-                <span class ="agregar-tarea__container--nav--title">Agregar nueva tarea</span>
-                <span class="iconify" data-icon="fluent:clipboard-task-20-regular" data-inline="false" style="color: #ffffff;" data-width="30" data-height="30"></span>
-            </div>
-            <div class = "agregar-tarea__container--logo">
-                <span class="iconify" data-icon="ic:baseline-add-task" data-inline="false" style="color: #ffffff;" data-width="50" data-height="50"></span>
-            </div>
-            <form action = "" class ="form">
+    <main class='main'>
 
-                <input type ="text" placeholder="Tarea" class = "form__input">
-            
-            <select class = "form_input  select">
-                    
-                    <option value="0">Prioridad:</option>
-                    <option value="ALTA" class = "select__alta">Alta</option>
-                    <option value="MEDIA" class = "select__media">Media</option>
-                    <option value="BAJA" class = "select__baja">Baja</option>
-            
-            </select>                                                              
-                <input type = "submit" value = "AGREGAR TAREA" class = "form__submit">
-            </form>
+        <header class="main__header">
+            <div id="agregar-tarea">
+                <div class="agregar-tarea__container--nav">
+                    <span class="iconify-container-arrow">
+                        <span class="iconify agregar-tarea__container--nav--arrow" data-icon="akar-icons:arrow-left"
+                            data-inline="false" style="color: #ffffff;" data-width="30" data-height="30"></span>
+                    </span>
+                    <span class="agregar-tarea__container--nav--title">Agregar nueva tarea</span>
+                    <span class="iconify" data-icon="fluent:clipboard-task-20-regular" data-inline="false"
+                        style="color: #ffffff;" data-width="30" data-height="30"></span>
+                </div>
+                <div class="agregar-tarea__container--logo">
+                    <span class="iconify" data-icon="ic:baseline-add-task" data-inline="false" style="color: #ffffff;"
+                        data-width="50" data-height="50"></span>
+                </div>
+                <form action="" class="form">
 
-        </div>  
+                    <input type="text" placeholder="Tarea" class="form__input">
 
-        <div class = "main__header--container">
-            <div class ="main__header--container--items">
-                <span class ='iconify-container-menu'>
-                <span class="iconify main__header--container--items--menu" data-icon="gg:menu-left-alt" data-inline="false" style="color: #ffffff;" data-width="30" data-height="30"></span>
-                </span>
-                <h1 class="main__header--container--items--h1">Mis <br>Objetivos</h1>
-                <h4 class="main__header--container--items--h4"></h4>
-            </div>
-        </div>
-        
-        <div class = "main__header--container--number">
-        
-            <h4 class = "main__header--container--number--h4"></h4>
-        
-        </div>
+                    <select class="form_input  select">
 
-    </header>
-    
+                        <option value="0">Prioridad:</option>
+                        <option value="ALTA" class="select__alta">Alta</option>
+                        <option value="MEDIA" class="select__media">Media</option>
+                        <option value="BAJA" class="select__baja">Baja</option>
 
-    
-    <section class ="tareas">
-        <h4 class = "tareas__h4">TAREAS</h4>
-            <div class = "tareas__container">
+                    </select>
+                    <input type="submit" value="AGREGAR TAREA" class="form__submit">
+                </form>
 
-
-                
-                
             </div>
 
+            <div class="main__header--container">
+                <div class="main__header--container--items">
+                    <span class='iconify-container-menu'>
+                        <span class="iconify main__header--container--items--menu" data-icon="gg:menu-left-alt"
+                            data-inline="false" style="color: #ffffff;" data-width="30" data-height="30"></span>
+                    </span>
+                    <h1 class="main__header--container--items--h1">Mis <br>Objetivos</h1>
+                    <h4 class="main__header--container--items--h4"></h4>
+                </div>
+            </div>
 
-          
-    </section>
-   
-    
-</main>
+            <div class="main__header--container--number">
+
+                <h4 class="main__header--container--number--h4"></h4>
+
+            </div>
+
+        </header>
+
+
+
+        <section class="tareas">
+            <h4 class="tareas__h4">TAREAS</h4>
+            <div class="tareas__container">
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
 </body>
-    <script src = "./lib/moment/moment.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src ="./js/app.js"></script>
-    <script src ="./js/moment.js"></script>
-   
-   
-   
+<script src="./lib/moment/moment.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/moment.js"></script>
+
+
+
 </html>
