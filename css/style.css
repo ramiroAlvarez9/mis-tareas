@@ -122,15 +122,15 @@ body {
 }
 
 #agregar-tarea {
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 1;
   background-color: #4957A2;
   height: 100vh;
   width: 100vw;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
